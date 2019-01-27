@@ -8,8 +8,6 @@ shinyUI(fluidPage(
       checkboxInput("showConfInt", "Show/Hide Confidence Interval", value = TRUE),
      checkboxInput("showPred", "Show/Hide Predicted Point", value = TRUE),
       checkboxInput("showData", "Show/Hide Data", value = TRUE),
-  #    selectInput("month", "Select a month of interest:", 
- #                 choices = c(5,6,7,8,9),selected = 5),
       checkboxGroupInput(inputId = "month",
                      label = "Select month(s) of interest:",
                      choices = levels(as.factor(airquality$Month)),
